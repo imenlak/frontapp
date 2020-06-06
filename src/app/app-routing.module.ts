@@ -15,24 +15,36 @@ import { GroupesEauGlaceeComponent } from './produit/groupes-eau-glacee/groupes-
 import { IndustrielsComponent } from './produit/industriels/industriels.component';
 import { InformatiqueComponent } from './produit/informatique/informatique.component';
 import { AppComponent } from './app.component';
+import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
 
 
 const routes: Routes = [
 
-  { path: 'accueil', component: AcceuilComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'devis', component: DevisComponent },
-  { path: 'climatiseurs', component: ClimatiseursComponent },
-  { path: 'accessoires', component: AccesoiresComponent },
-  { path: 'compresseurs', component: CompresseurComponent },
-  { path: 'condenseurs', component: CondenseursComponent },
-  { path: 'evaporteurs', component: EvaporteursComponent },
-  { path: 'groupeEauGlacee', component: GroupesEauGlaceeComponent },
-  { path: 'industriels', component: IndustrielsComponent },
-  { path: 'informatique', component: InformatiqueComponent}
+  {
+    path: '',
+    component: AppLayoutComponent,
+    children: [
+      { path: 'acceuil', component: AcceuilComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'devis', component: DevisComponent },
+      { path: 'climatiseurs', component: ClimatiseursComponent },
+      { path: 'accessoires', component: AccesoiresComponent },
+      { path: 'compresseurs', component: CompresseurComponent },
+      { path: 'condenseurs', component: CondenseursComponent },
+      { path: 'evaporteurs', component: EvaporteursComponent },
+      { path: 'groupeEauGlacee', component: GroupesEauGlaceeComponent },
+      { path: 'industriels', component: IndustrielsComponent },
+      { path: 'informatique', component: InformatiqueComponent }
+    ]
+  },
+  
+
+
 ];
+
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

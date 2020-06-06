@@ -20,6 +20,7 @@ import { IndustrielsComponent } from './produit/industriels/industriels.componen
 import { InformatiqueComponent } from './produit/informatique/informatique.component';
 import { AdminComponent } from './AdminPage/admin/admin.component';
 import { SidebarModule } from 'ng-sidebar';
+import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
 
 
 @NgModule({
@@ -39,13 +40,14 @@ import { SidebarModule } from 'ng-sidebar';
     AccesoiresComponent,
     IndustrielsComponent,
     InformatiqueComponent,
-    AdminComponent
+    AdminComponent,
+    AppLayoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
