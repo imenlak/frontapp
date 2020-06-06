@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class SideBarComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
   }
   Testing() {
@@ -17,7 +16,6 @@ export class SideBarComponent implements OnInit {
       $("#wrapper").toggleClass("toggled");
     });
   }
-
 }
 
 
