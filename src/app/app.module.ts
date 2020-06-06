@@ -20,6 +20,7 @@ import { IndustrielsComponent } from './produit/industriels/industriels.componen
 import { InformatiqueComponent } from './produit/informatique/informatique.component';
 import { AdminComponent } from './AdminPage/admin/admin.component';
 import { SidebarModule } from 'ng-sidebar';
+import { HomeComponent } from './home/home/home.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { SidebarModule } from 'ng-sidebar';
     AccesoiresComponent,
     IndustrielsComponent,
     InformatiqueComponent,
-    AdminComponent
+    AdminComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
