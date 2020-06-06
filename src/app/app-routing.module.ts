@@ -21,11 +21,6 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 
 const routes: Routes = [
   
-
-
-
-
-
   { path: 'home', component: HomeComponent,
   children: [
     {
@@ -39,7 +34,6 @@ const routes: Routes = [
   ]
 
 },
-  { path: 'contact', component: ContactComponent },
   { path: 'devis', component: DevisComponent },
   { path: 'climatiseurs', component: ClimatiseursComponent },
   { path: 'accessoires', component: AccesoiresComponent },
@@ -48,8 +42,7 @@ const routes: Routes = [
   { path: 'evaporteurs', component: EvaporteursComponent },
   { path: 'groupeEauGlacee', component: GroupesEauGlaceeComponent },
   { path: 'industriels', component: IndustrielsComponent },
-  { path: 'informatique', component: InformatiqueComponent},
-  
+  { path: 'informatique', component: InformatiqueComponent}, 
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponentComponent }
 ];

@@ -21,7 +21,23 @@ import { InformatiqueComponent } from './produit/informatique/informatique.compo
 import { AdminComponent } from './AdminPage/admin/admin.component';
 import { SidebarModule } from 'ng-sidebar';
 import { HomeComponent } from './home/home/home.component';
+
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
+import { NgxGalleryModule } from 'ngx-gallery';
+
+
+/* Custom Hammer configuration */
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import * as Hammer from 'hammerjs';
+
+export class CustomHammerConfig extends HammerGestureConfig {
+  overrides = {
+    'pan': {
+      direction: Hammer.DIRECTION_ALL,
+    }
+  }
+}
+/* End Custom hammer configuration */
 
 
 @NgModule({
@@ -49,9 +65,13 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
+    NgxGalleryModule
   ],
-  providers: [],
+  providers: [
+    {provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig}
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
