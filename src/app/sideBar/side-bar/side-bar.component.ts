@@ -9,9 +9,14 @@ export class SideBarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {  
-  }                  
-
+  ngOnInit() {
+  }
+  Testing() {
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  }
 
 }
 
