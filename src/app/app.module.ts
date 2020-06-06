@@ -21,6 +21,7 @@ import { InformatiqueComponent } from './produit/informatique/informatique.compo
 import { AdminComponent } from './AdminPage/admin/admin.component';
 import { SidebarModule } from 'ng-sidebar';
 import { HomeComponent } from './home/home/home.component';
+import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { HomeComponent } from './home/home/home.component';
     IndustrielsComponent,
     InformatiqueComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponentComponent
   ],
   imports: [
     BrowserModule,

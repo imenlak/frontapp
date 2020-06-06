@@ -15,11 +15,30 @@ import { GroupesEauGlaceeComponent } from './produit/groupes-eau-glacee/groupes-
 import { IndustrielsComponent } from './produit/industriels/industriels.component';
 import { InformatiqueComponent } from './produit/informatique/informatique.component';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home/home.component';
+import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 
 
 const routes: Routes = [
+  
 
-  { path: 'accueil', component: AcceuilComponent },
+
+
+
+
+  { path: 'home', component: HomeComponent,
+  children: [
+    {
+      path: 'a', // child route path
+      component: AcceuilComponent // child route component that the router renders
+    },
+    {
+      path: 'b',
+      component: ContactComponent // another child route component that the router renders
+    }
+  ]
+
+},
   { path: 'contact', component: ContactComponent },
   { path: 'devis', component: DevisComponent },
   { path: 'climatiseurs', component: ClimatiseursComponent },
@@ -29,7 +48,10 @@ const routes: Routes = [
   { path: 'evaporteurs', component: EvaporteursComponent },
   { path: 'groupeEauGlacee', component: GroupesEauGlaceeComponent },
   { path: 'industriels', component: IndustrielsComponent },
-  { path: 'informatique', component: InformatiqueComponent}
+  { path: 'informatique', component: InformatiqueComponent},
+  
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponentComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
