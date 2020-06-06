@@ -14,7 +14,7 @@ import { EvaporteursComponent } from './produit/evaporteurs/evaporteurs.componen
 import { GroupesEauGlaceeComponent } from './produit/groupes-eau-glacee/groupes-eau-glacee.component';
 import { IndustrielsComponent } from './produit/industriels/industriels.component';
 import { InformatiqueComponent } from './produit/informatique/informatique.component';
-
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
