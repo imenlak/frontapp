@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -20,11 +19,7 @@ import { IndustrielsComponent } from './produit/industriels/industriels.componen
 import { InformatiqueComponent } from './produit/informatique/informatique.component';
 import { AdminComponent } from './AdminPage/admin/admin.component';
 import { SidebarModule } from 'ng-sidebar';
-<<<<<<< HEAD
 import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
-=======
-import { HomeComponent } from './home/home/home.component';
->>>>>>> c2512eba82edf18349299d4167a6cf193b7ea9ec
 
 
 @NgModule({
@@ -45,11 +40,7 @@ import { HomeComponent } from './home/home/home.component';
     IndustrielsComponent,
     InformatiqueComponent,
     AdminComponent,
-<<<<<<< HEAD
     AppLayoutComponent
-=======
-    HomeComponent
->>>>>>> c2512eba82edf18349299d4167a6cf193b7ea9ec
   ],
   imports: [
     BrowserModule,
