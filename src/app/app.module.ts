@@ -35,6 +35,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
       direction: Hammer.DIRECTION_ALL,
     }
   }
+  
 }
 /* End Custom hammer configuration */
 
