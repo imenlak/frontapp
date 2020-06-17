@@ -41,9 +41,9 @@ export class ClimatiseursComponent implements OnInit {
 
   this.galleryImages = [
       {
-          small: 'assets/img/acceuil/1.jpg',
-          medium: 'assets/img/acceuil/1.jpg',
-          big: 'assets/img/acceuil/1.jpg'
+          small: 'assets/img/acceuil/flower.jpg',
+          medium: 'assets/img/acceuil/flower.jpg',
+          big: 'assets/img/acceuil/flower.jpg'
       },
       {
           small: 'assets/img/acceuil/2.jpg',
