@@ -20,6 +20,8 @@ import { InformatiqueComponent } from './produit/informatique/informatique.compo
 import { AdminComponent } from './AdminPage/admin/admin.component';
 import { SidebarModule } from 'ng-sidebar';
 import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+
 
 
 @NgModule({
@@ -47,6 +49,7 @@ import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
     AppRoutingModule,
     AngularFontAwesomeModule,
     SidebarModule.forRoot(),
+    NgxGalleryModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
