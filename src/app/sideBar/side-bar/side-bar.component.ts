@@ -10,11 +10,7 @@ export class SideBarComponent implements OnInit {
   constructor() { }
   ngOnInit() {
   }
-  Testing() {
-  
-    $("#wrapper").toggleClass("toggled");
-
-}
+ 
 }
 
 
