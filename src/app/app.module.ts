@@ -20,6 +20,8 @@ import { InformatiqueComponent } from './produit/informatique/informatique.compo
 import { AdminComponent } from './AdminPage/admin/admin.component';
 import { SidebarModule } from 'ng-sidebar';
 import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
+ 
+
 
 
 @NgModule({
@@ -46,7 +48,7 @@ import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    SidebarModule.forRoot(),
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
